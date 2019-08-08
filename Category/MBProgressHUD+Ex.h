@@ -1,12 +1,14 @@
 //
 //  MBProgressHUD+Ex.h
-//  Platform
+//  ChinaBidding
 //
-//  Created by 木子 on 2019/6/25.
-//  Copyright © 2019 koki. All rights reserved.
+//  Created by 木子 on 2019/8/8.
+//  Copyright © 2019 木子. All rights reserved.
 //
 
 #import "MBProgressHUD.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface MBProgressHUD (Ex)
 
@@ -16,3 +18,4 @@
 
 @end
 
+NS_ASSUME_NONNULL_END

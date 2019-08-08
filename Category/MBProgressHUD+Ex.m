@@ -1,9 +1,10 @@
+
 //
 //  MBProgressHUD+Ex.m
-//  Platform
+//  ChinaBidding
 //
-//  Created by 木子 on 2019/6/25.
-//  Copyright © 2019 koki. All rights reserved.
+//  Created by 木子 on 2019/8/8.
+//  Copyright © 2019 木子. All rights reserved.
 //
 
 #import "MBProgressHUD+Ex.h"
@@ -11,6 +12,7 @@
 @implementation MBProgressHUD (Ex)
 
 + (instancetype)showHUDAddedTo:(UIView *)view title:(NSString *)title {
+    
     MBProgressHUD *hud = [MBProgressHUD setupHUDTo:view];
     hud.label.text = title;
     hud.removeFromSuperViewOnHide = true;
@@ -18,6 +20,7 @@
 }
 
 + (instancetype)showHUDTextModeAddedTo:(UIView *)view title:(NSString *)title {
+    
     MBProgressHUD *hud = [MBProgressHUD setupHUDTo:view];
     hud.mode = MBProgressHUDModeText;
     hud.label.text = title;
@@ -26,7 +29,7 @@
     return hud;
 }
 
-+ (instancetype)showHUDTextModeWithTitle:(NSString *)title{
++ (instancetype)showHUDTextModeWithTitle:(NSString *)title {
     
     MBProgressHUD *hud = [MBProgressHUD setupHUDTo:[UIApplication sharedApplication].keyWindow];
     hud.mode = MBProgressHUDModeText;
@@ -37,11 +40,12 @@
 }
 
 + (instancetype)setupHUDTo:(UIView *)view {
+    
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:true];
     hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
     hud.bezelView.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.8];
     hud.contentColor = [UIColor whiteColor];
     return hud;
 }
-
+    
 @end
